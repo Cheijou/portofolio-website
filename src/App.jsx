@@ -292,7 +292,7 @@ function PortfolioWebsite() {
       </nav>
 
       {/* HERO */}
-      <section className="relative px-6 md:px-20 pt-36 pb-20">
+      <section className="relative px-6 md:px-20 pt-36 pb-20 ">
         <div className="absolute top-0 left-0 pointer-events-none w-72 h-72 bg-[#F3D8A6] rounded-full blur-3xl opacity-40" />
         <div className="absolute bottom-0 right-0 pointer-events-none w-80 h-80 bg-[#E8C07D] rounded-full blur-3xl opacity-30" />
         <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -338,7 +338,7 @@ function PortfolioWebsite() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" className="px-6 md:px-20 py-10">
+      <section id="about" className="px-6 md:px-20 py-22">
         <div className="max-w-6xl mx-auto bg-[#FFF8ED] rounded-[40px] p-10 shadow-lg">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -363,7 +363,7 @@ function PortfolioWebsite() {
       </section>
 
       {/* SKILLS */}
-      <section id="skills" className="px-6 md:px-20 py-16">
+      <section id="skills" className="px-6 md:px-20 py-24">
         <div className="max-w-6xl mx-auto">
           <div className="mb-10 text-center">
             <p className="uppercase tracking-[0.2em] text-sm text-[#A67C52] mb-3">
@@ -406,7 +406,7 @@ function PortfolioWebsite() {
       </section>
 
       {/* PROJECTS */}
-      <section id="projects" className="px-6 md:px-20 py-16">
+      <section id="projects" className="px-6 md:px-20 py-24">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12 text-center">
             <p className="uppercase tracking-[0.2em] text-sm text-[#A67C52] mb-3">
@@ -512,46 +512,205 @@ function PortfolioWebsite() {
       </section>
 
       {/* EXPERIENCE */}
-      <section id="experience" className="px-6 md:px-20 py-16">
-        <div className="max-w-6xl mx-auto bg-[#FFF8ED] rounded-[40px] p-10 shadow-lg">
-          <div className="mb-10 text-center">
+      <section id="experience" className="px-6 md:px-20 py-24">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12 text-center">
             <p className="uppercase tracking-[0.2em] text-sm text-[#A67C52] mb-3">
               Experience
             </p>
-            <h2 className="text-4xl font-bold">Journey & Leadership</h2>
+
+            <h2 className="text-4xl font-bold">
+              Professional & Leadership Journey
+            </h2>
           </div>
-          <div className="space-y-8">
-            <div className="border-l-4 border-[#C79A4A] pl-6">
-              <h3 className="text-2xl font-bold">Full-Stack Developer</h3>
-              <p className="text-[#A67C52] mb-2">
-                PIMUS XV Universitas Surabaya
-              </p>
-              <p className="text-[#6E5849] leading-relaxed">
-                Developed competition information systems and contributed to
-                both frontend and backend development.
-              </p>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* PIMUS */}
+            <div className="bg-[#FFF8ED] rounded-[30px] p-8 shadow-lg border border-[#F1DFC0] hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
+              <div className="flex items-start justify-between gap-4 mb-5">
+                <div>
+                  <h3 className="text-2xl font-bold leading-tight">
+                    Full-stack Developer
+                  </h3>
+
+                  <p className="text-[#A67C52] font-medium mt-1">
+                    PIMUS XV Universitas Surabaya
+                  </p>
+                </div>
+
+                <span className="text-xs px-3 py-2 rounded-full bg-[#F7E8C8] text-[#A67C52] font-semibold whitespace-nowrap">
+                  Jul 2025 — Dec 2025
+                </span>
+              </div>
+
+              <ul className="list-disc ml-5 text-[#6E5849] leading-relaxed space-y-2 text-sm">
+                <li>
+                  Participated as vice coordinator in developing a competition
+                  information system website
+                </li>
+
+                <li>
+                  Developed submission and participant management features
+                </li>
+
+                <li>Collaborated using Laravel-based development workflows</li>
+
+                <li>Assisted in bug maintenance during competition periods</li>
+              </ul>
             </div>
-            <div className="border-l-4 border-[#C79A4A] pl-6">
-              <h3 className="text-2xl font-bold">
-                Database Teaching Assistant
-              </h3>
-              <p className="text-[#A67C52] mb-2">
-                Universitas Surabaya (UBAYA)
-              </p>
-              <p className="text-[#6E5849] leading-relaxed">
-                Assisted students in database concepts, SQL implementation, and
-                practical laboratory sessions.
-              </p>
+
+            {/* DATABASE TA */}
+            <div className="bg-[#FFF8ED] rounded-[30px] p-8 shadow-lg border border-[#F1DFC0] hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
+              <div className="flex items-start justify-between gap-4 mb-5">
+                <div>
+                  <h3 className="text-2xl font-bold leading-tight">
+                    Database Teaching Assistant
+                  </h3>
+
+                  <p className="text-[#A67C52] font-medium mt-1">
+                    Universitas Surabaya
+                  </p>
+                </div>
+
+                <span className="text-xs px-3 py-2 rounded-full bg-[#F7E8C8] text-[#A67C52] font-semibold whitespace-nowrap">
+                  Sep 2025 — Dec 2025
+                </span>
+              </div>
+
+              <ul className="list-disc ml-5 text-[#6E5849] leading-relaxed space-y-2 text-sm">
+                <li>
+                  Assisted students in understanding database concepts and SQL
+                  implementation
+                </li>
+
+                <li>Guided practical sessions and assignments</li>
+
+                <li>Supported lecturers during laboratory activities</li>
+              </ul>
             </div>
-            <div className="border-l-4 border-[#C79A4A] pl-6">
-              <h3 className="text-2xl font-bold">
-                Vice Coordinator of Technical Equipment Division
-              </h3>
-              <p className="text-[#A67C52] mb-2">MOB-FT Universitas Surabaya</p>
-              <p className="text-[#6E5849] leading-relaxed">
-                Coordinated operational logistics and managed technical event
-                preparation with the division team.
-              </p>
+
+            {/* KSM IF */}
+            <div className="bg-[#FFF8ED] rounded-[30px] p-8 shadow-lg border border-[#F1DFC0] hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
+              <div className="flex items-start justify-between gap-4 mb-5">
+                <div>
+                  <h3 className="text-2xl font-bold leading-tight">
+                    Coordinator of Creative Design Department
+                  </h3>
+
+                  <p className="text-[#A67C52] font-medium mt-1">
+                    KSM-IF Universitas Surabaya
+                  </p>
+                </div>
+
+                <span className="text-xs px-3 py-2 rounded-full bg-[#F7E8C8] text-[#A67C52] font-semibold whitespace-nowrap">
+                  Oct 2024 — Aug 2025
+                </span>
+              </div>
+
+              <ul className="list-disc ml-5 text-[#6E5849] leading-relaxed space-y-2 text-sm">
+                <li>
+                  Led the creative design division for events and publications
+                </li>
+
+                <li>Maintained and managed the official KSM-IF website</li>
+
+                <li>
+                  Coordinated documentation, design tasks, and collaboration
+                </li>
+
+                <li>Ensured visual consistency across organizational media</li>
+              </ul>
+            </div>
+
+            {/* KSM MEMBER */}
+            <div className="bg-[#FFF8ED] rounded-[30px] p-8 shadow-lg border border-[#F1DFC0] hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
+              <div className="flex items-start justify-between gap-4 mb-5">
+                <div>
+                  <h3 className="text-2xl font-bold leading-tight">
+                    Member of Creative Design Department
+                  </h3>
+
+                  <p className="text-[#A67C52] font-medium mt-1">
+                    KSM-IF Universitas Surabaya
+                  </p>
+                </div>
+
+                <span className="text-xs px-3 py-2 rounded-full bg-[#F7E8C8] text-[#A67C52] font-semibold whitespace-nowrap">
+                  Oct 2023 — Aug 2024
+                </span>
+              </div>
+
+              <ul className="list-disc ml-5 text-[#6E5849] leading-relaxed space-y-2 text-sm">
+                <li>Created promotional and visual materials for activities</li>
+
+                <li>Supported publication and event documentation needs</li>
+
+                <li>
+                  Collaborated with internal divisions for digital content
+                </li>
+              </ul>
+            </div>
+
+            {/* MOB FT */}
+            <div className="bg-[#FFF8ED] rounded-[30px] p-8 shadow-lg border border-[#F1DFC0] hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
+              <div className="flex items-start justify-between gap-4 mb-5">
+                <div>
+                  <h3 className="text-2xl font-bold leading-tight">
+                    Vice Coordinator of Technical Equipment Division
+                  </h3>
+
+                  <p className="text-[#A67C52] font-medium mt-1">
+                    MOB-FT Universitas Surabaya
+                  </p>
+                </div>
+
+                <span className="text-xs px-3 py-2 rounded-full bg-[#F7E8C8] text-[#A67C52] font-semibold whitespace-nowrap">
+                  May 2025 — Aug 2025
+                </span>
+              </div>
+
+              <ul className="list-disc ml-5 text-[#6E5849] leading-relaxed space-y-2 text-sm">
+                <li>
+                  Coordinated technical preparation and operational logistics
+                </li>
+
+                <li>Managed division coordination during event execution</li>
+
+                <li>
+                  Ensured all technical requirements were properly prepared
+                </li>
+              </ul>
+            </div>
+
+            {/* ILPC */}
+            <div className="bg-[#FFF8ED] rounded-[30px] p-8 shadow-lg border border-[#F1DFC0] hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
+              <div className="flex items-start justify-between gap-4 mb-5">
+                <div>
+                  <h3 className="text-2xl font-bold leading-tight">
+                    Vice Coordinator of Equipment Division
+                  </h3>
+
+                  <p className="text-[#A67C52] font-medium mt-1">
+                    Informatics Logical & Programming Competition (ILPC)
+                  </p>
+                </div>
+
+                <span className="text-xs px-3 py-2 rounded-full bg-[#F7E8C8] text-[#A67C52] font-semibold whitespace-nowrap">
+                  Oct 2024 — Feb 2025
+                </span>
+              </div>
+
+              <ul className="list-disc ml-5 text-[#6E5849] leading-relaxed space-y-2 text-sm">
+                <li>Coordinated event equipment preparation and logistics</li>
+
+                <li>
+                  Managed operational support during competition execution
+                </li>
+
+                <li>
+                  Collaborated with committees to ensure technical readiness
+                </li>
+              </ul>
             </div>
           </div>
         </div>
